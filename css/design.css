@@ -31,11 +31,11 @@ header {
 
 .footer {
     background-color: #dabfde;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     text-align: center;
+    font-size: 0.75em;
+    padding: 20px 20px;
+    font-weight: 200;
+    clear: both;
 }
 /*Header and footer*/
 /*Main*/
@@ -44,11 +44,46 @@ body {
     color: black;
 }
 
-h4 {
-/*    color: lightgray;*/
-}
-
 a {
     text-decoration: none;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.box{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+/*Products*/
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #dabfde;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;  
+}
+.card,
+p {
+    margin-bottom: 20px;
+}
+/*Contact*/
+.contact-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%; 
+    border-radius: 50%;
+}
+
+.contact-photo:hover {
+     transform: scale(1.20);
+}
