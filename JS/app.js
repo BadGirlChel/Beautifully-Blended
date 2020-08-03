@@ -1,20 +1,26 @@
-noStroke();
-// the beautiful blue sky
-background(82, 222, 240);
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-// the starting size for the sun
-var sunSize = 30; 
+function myFunction() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-draw = function() {
-  
-    // The sun, a little circle on the horizon
-    fill(255, 204, 0);
-    ellipse(200, 298, sunSize, sunSize);
-
-    // The land, blocking half of the sun
-    fill(76, 168, 67);
-    rect(0, 300, 400, 100);
-    sunSize = sunSize + 1;
-    
-    print(Thanks);
-};
+function myFunction() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

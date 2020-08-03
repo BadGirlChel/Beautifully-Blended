@@ -64,7 +64,7 @@ a {
 .card button {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 20px;
     color: white;
     background-color: #dabfde;
     text-align: center;
@@ -73,6 +73,10 @@ a {
 }
 .card,
 p {
+    margin-bottom: 20px;
+}
+.topic-main {
+    margin-left: 5px;
     margin-bottom: 20px;
 }
 /*Contact*/
