@@ -1,79 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <link href="../css/form.css" rel="stylesheet">
-    <script src="JS/app.js"></script>
-    <div class="row">
-  <div class="col-75">
-    <div class="container">
-      <form action="/action_page.php">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Purchase Form|Beautifully Blended</title>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/form.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+          <h1>Sign Up</h1>
+              
+        <fieldset>
           
+          <legend><span class="number">1</span>Your basic info</legend>
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="user_name" placeholder="Jane Doe">
+            
+             <label for="mail">Email:</label>
+             <input type="email" id="mail" name="user_email" placeholder="username@gmail.com">
+            
+             <label for="password">Password:</label>
+             <input type="password" id="password" name="user_password">
           
-        <div>
-            <h3>Subscribtion Boxes</h3>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br>
-        </div>
+        </fieldset>
         
-          <div class="row">
-          <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="New York">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
-              </div>
-              <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-50">
-            <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <img src="../img/Payment-Method-Transparent.png" />
-            </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <fieldset>
+        
+          <legend><span class="number">2</span>Your Purchase</legend>
+          
+          <label for="pay">How To Pay:</label>
+          <select id="pay" name="user_pay">
+            
+              <option value="master-card">MasterCard</option>
+              <option value="visa">Visa</option>
+              <option value="paypal">Paypal</option> 
+            
+          </select>
+          
+          <label>Interests:</label>
+          <input type="checkbox" id="1" value="product-1" name="user_choice">
+          <label class="light" for="1">The Invest Box (&#36; 39.98)</label><br>
+          
+           <input type="checkbox" id="2" value="product-2" name="user_choice">
+          <label class="light" for="2">The Sprout Box (&#36; 39.98)</label><br>
+        
+           <input type="checkbox" id="3" value="product-3" name="user_choice">
+          <label class="light" for="3">The Flourishing Box (&#36; 39.98)</label>
+          
+        </fieldset>
+        
+        
+        <button type="submit"><strong>Sign Up</strong></button>
+        
+          <p><a href="../items.html">Return To Products</a></p>
+          
       </form>
-    </div>
-  </div>
-</div>
+      
+    </body>
+  
 </html>
