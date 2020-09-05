@@ -159,6 +159,20 @@ p {
 }
 
 /*media queries*/
+
+@media screen and (min-width: 200px) {
+     .splash-img {
+        visibility: hidden;
+    }
+    
+     .photo {
+/*        margin-left: auto;*/
+         width: 150px;
+         height: 150px;
+         text-align: center;
+    }
+}
+
 @media screen and (min-width: 480px) {
     
     footer {
